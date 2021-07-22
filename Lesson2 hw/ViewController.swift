@@ -32,8 +32,8 @@ class ViewController: UIViewController {
         let double = 9.2
         let double1 = 1.5
         
-        var firstSum = Int(double + double1)
-        var secondSum = Float(double.truncatingRemainder(dividingBy: 1) + double1.truncatingRemainder(dividingBy: 1)) * 10
+        let firstSum = Int(double + double1)
+        let secondSum = Float(double.truncatingRemainder(dividingBy: 1) + double1.truncatingRemainder(dividingBy: 1)) * 10
         print(firstSum)
         print(secondSum)
     }
@@ -57,6 +57,13 @@ class ViewController: UIViewController {
          В результате получаем:
          "Нечетное"
          */
+        
+        let x: Int = 10
+        if x % 2 == 0 {
+            print("Четное")
+        }else{
+            print("Нечетное")}
+        }
     }
     
     func findIsYearLeap() {
@@ -80,5 +87,5 @@ class ViewController: UIViewController {
          */
     }
     
-}
+
 
