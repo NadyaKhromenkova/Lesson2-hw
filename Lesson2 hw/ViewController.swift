@@ -85,6 +85,14 @@ class ViewController: UIViewController {
          В результате получаем:
          "Обычный"
          */
+        
+        let year = 1978
+        
+        if (year % 4 != 0 || year % 100 == 0 && year % 400 == 0){
+            print("Обычный")
+        }else{
+            print("Високосный")
+        }
     }
     
 
